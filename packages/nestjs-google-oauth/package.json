@@ -1,0 +1,48 @@
+{
+    "name": "nestjs-google-oauth",
+    "version": "0.0.2",
+    "author": {
+        "name": "Mirza Saikat Ahmmed",
+        "email": "contact@saikat.com.bd",
+        "url": "https://saikat.com.bd"
+    },
+    "homepage": "https://github.com/mirzasaikatahmmed",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mirzasaikatahmmed"
+    },
+    "keywords": [
+        "nestjs",
+        "google",
+        "oauth",
+        "oauth2",
+        "passport",
+        "authentication",
+        "auth",
+        "login",
+        "signin"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w"
+    },
+    "dependencies": {
+        "@nestjs/common": "^10.0.0",
+        "@nestjs/core": "^10.0.0",
+        "@nestjs/passport": "^10.0.0",
+        "passport": "^0.7.0",
+        "passport-google-oauth20": "^2.0.0",
+        "express-session": "^1.17.0",
+        "reflect-metadata": "^0.1.13",
+        "rxjs": "^7.0.0",
+        "dotenv": "^16.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0",
+        "@types/passport-google-oauth20": "^2.0.0",
+        "@types/express-session": "^1.17.0"
+    }
+}

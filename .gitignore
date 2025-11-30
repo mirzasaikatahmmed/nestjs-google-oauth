@@ -1,0 +1,3 @@
+node_modules
+apps/test-app/node_modules
+apps/test-app/dist
