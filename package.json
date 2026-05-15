@@ -8,8 +8,6 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
-    "node-fetch": "^3.3.2",
     "turbo": "latest"
   },
   "workspaces": [
