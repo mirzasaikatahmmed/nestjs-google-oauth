@@ -1,0 +1,644 @@
+{
+  "timestamp": "2026-05-15T13:54:02.656Z",
+  "passed": true,
+  "secrets": [],
+  "vulnerabilities": {
+    "total": 28,
+    "critical": 0,
+    "high": 11,
+    "moderate": 12,
+    "low": 5,
+    "info": 0,
+    "packages": [
+      {
+        "name": "@angular-devkit/core",
+        "severity": "moderate",
+        "via": [
+          "ajv",
+          "picomatch"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/schematics",
+          "version": "11.1.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@angular-devkit/schematics",
+        "severity": "moderate",
+        "via": [
+          "@angular-devkit/core"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@angular-devkit/schematics-cli",
+        "severity": "moderate",
+        "via": [
+          "@angular-devkit/core",
+          "@angular-devkit/schematics",
+          "inquirer"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@nestjs/cli",
+        "severity": "high",
+        "via": [
+          "@angular-devkit/core",
+          "@angular-devkit/schematics",
+          "@angular-devkit/schematics-cli",
+          "@nestjs/schematics",
+          "glob",
+          "inquirer",
+          "webpack"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@nestjs/common",
+        "severity": "moderate",
+        "via": [
+          "file-type"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@nestjs/config",
+        "severity": "moderate",
+        "via": [
+          "lodash"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "@nestjs/core",
+        "severity": "moderate",
+        "via": [
+          "@nestjs/platform-express",
+          "@nestjs/core Improperly Neutralizes Special Elements in Output Used by a Downstream Component ('Injection')"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/core",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@nestjs/platform-express",
+        "severity": "high",
+        "via": [
+          "@nestjs/core",
+          "body-parser",
+          "express",
+          "multer"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@nestjs/schematics",
+        "severity": "moderate",
+        "via": [
+          "@angular-devkit/core",
+          "@angular-devkit/schematics"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/schematics",
+          "version": "11.1.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "@nestjs/testing",
+        "severity": "moderate",
+        "via": [
+          "@nestjs/core",
+          "@nestjs/platform-express"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/testing",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "ajv",
+        "severity": "moderate",
+        "via": [
+          "ajv has ReDoS when using `$data` option",
+          "ajv has ReDoS when using `$data` option"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/schematics",
+          "version": "11.1.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "body-parser",
+        "severity": "low",
+        "via": [
+          "qs"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "brace-expansion",
+        "severity": "moderate",
+        "via": [
+          "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+          "brace-expansion: Zero-step sequence causes process hang and memory exhaustion"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "express",
+        "severity": "high",
+        "via": [
+          "body-parser",
+          "path-to-regexp",
+          "qs"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "external-editor",
+        "severity": "low",
+        "via": [
+          "tmp"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "file-type",
+        "severity": "moderate",
+        "via": [
+          "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+          "file-type: ZIP Decompression Bomb DoS via [Content_Types].xml entry"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "glob",
+        "severity": "high",
+        "via": [
+          "glob CLI: Command injection via -c/--cmd executes matches with shell:true"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "inquirer",
+        "severity": "low",
+        "via": [
+          "external-editor"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "lodash",
+        "severity": "high",
+        "via": [
+          "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+          "lodash vulnerable to Code Injection via `_.template` imports key names",
+          "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "minimatch",
+        "severity": "high",
+        "via": [
+          "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+          "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+          "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+          "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "multer",
+        "severity": "high",
+        "via": [
+          "Multer vulnerable to Denial of Service via incomplete cleanup",
+          "Multer vulnerable to Denial of Service via resource exhaustion",
+          "Multer Vulnerable to Denial of Service via Uncontrolled Recursion"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "path-to-regexp",
+        "severity": "high",
+        "via": [
+          "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "picomatch",
+        "severity": "high",
+        "via": [
+          "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+          "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+          "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+          "Picomatch has a ReDoS vulnerability via extglob quantifiers"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/schematics",
+          "version": "11.1.0",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "qs",
+        "severity": "moderate",
+        "via": [
+          "qs's arrayLimit bypass in comma parsing allows denial of service",
+          "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion"
+        ],
+        "fixAvailable": {
+          "name": "@nestjs/platform-express",
+          "version": "11.1.21",
+          "isSemVerMajor": true
+        }
+      },
+      {
+        "name": "serialize-javascript",
+        "severity": "high",
+        "via": [
+          "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+          "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "terser-webpack-plugin",
+        "severity": "high",
+        "via": [
+          "serialize-javascript"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "tmp",
+        "severity": "low",
+        "via": [
+          "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter"
+        ],
+        "fixAvailable": true
+      },
+      {
+        "name": "webpack",
+        "severity": "low",
+        "via": [
+          "webpack buildHttp: allowedUris allow-list bypass via URL userinfo (@) leading to build-time SSRF behavior",
+          "webpack buildHttp HttpUriPlugin allowedUris bypass via HTTP redirects → SSRF + cache persistence"
+        ],
+        "fixAvailable": true
+      }
+    ],
+    "languages": [
+      {
+        "language": "Node.js",
+        "icon": "🟢",
+        "detected": true,
+        "toolAvailable": true,
+        "total": 28,
+        "critical": 0,
+        "high": 11,
+        "moderate": 12,
+        "low": 5,
+        "packages": [
+          {
+            "name": "@angular-devkit/core",
+            "severity": "moderate",
+            "via": [
+              "ajv",
+              "picomatch"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/schematics",
+              "version": "11.1.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@angular-devkit/schematics",
+            "severity": "moderate",
+            "via": [
+              "@angular-devkit/core"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@angular-devkit/schematics-cli",
+            "severity": "moderate",
+            "via": [
+              "@angular-devkit/core",
+              "@angular-devkit/schematics",
+              "inquirer"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@nestjs/cli",
+            "severity": "high",
+            "via": [
+              "@angular-devkit/core",
+              "@angular-devkit/schematics",
+              "@angular-devkit/schematics-cli",
+              "@nestjs/schematics",
+              "glob",
+              "inquirer",
+              "webpack"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@nestjs/common",
+            "severity": "moderate",
+            "via": [
+              "file-type"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@nestjs/config",
+            "severity": "moderate",
+            "via": [
+              "lodash"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "@nestjs/core",
+            "severity": "moderate",
+            "via": [
+              "@nestjs/platform-express",
+              "@nestjs/core Improperly Neutralizes Special Elements in Output Used by a Downstream Component ('Injection')"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/core",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@nestjs/platform-express",
+            "severity": "high",
+            "via": [
+              "@nestjs/core",
+              "body-parser",
+              "express",
+              "multer"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@nestjs/schematics",
+            "severity": "moderate",
+            "via": [
+              "@angular-devkit/core",
+              "@angular-devkit/schematics"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/schematics",
+              "version": "11.1.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "@nestjs/testing",
+            "severity": "moderate",
+            "via": [
+              "@nestjs/core",
+              "@nestjs/platform-express"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/testing",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "ajv",
+            "severity": "moderate",
+            "via": [
+              "ajv has ReDoS when using `$data` option",
+              "ajv has ReDoS when using `$data` option"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/schematics",
+              "version": "11.1.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "body-parser",
+            "severity": "low",
+            "via": [
+              "qs"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "brace-expansion",
+            "severity": "moderate",
+            "via": [
+              "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+              "brace-expansion: Zero-step sequence causes process hang and memory exhaustion"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "express",
+            "severity": "high",
+            "via": [
+              "body-parser",
+              "path-to-regexp",
+              "qs"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "external-editor",
+            "severity": "low",
+            "via": [
+              "tmp"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "file-type",
+            "severity": "moderate",
+            "via": [
+              "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+              "file-type: ZIP Decompression Bomb DoS via [Content_Types].xml entry"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "glob",
+            "severity": "high",
+            "via": [
+              "glob CLI: Command injection via -c/--cmd executes matches with shell:true"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "inquirer",
+            "severity": "low",
+            "via": [
+              "external-editor"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "lodash",
+            "severity": "high",
+            "via": [
+              "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+              "lodash vulnerable to Code Injection via `_.template` imports key names",
+              "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "minimatch",
+            "severity": "high",
+            "via": [
+              "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+              "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+              "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+              "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+              "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+              "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "multer",
+            "severity": "high",
+            "via": [
+              "Multer vulnerable to Denial of Service via incomplete cleanup",
+              "Multer vulnerable to Denial of Service via resource exhaustion",
+              "Multer Vulnerable to Denial of Service via Uncontrolled Recursion"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "path-to-regexp",
+            "severity": "high",
+            "via": [
+              "path-to-regexp vulnerable to Regular Expression Denial of Service via multiple route parameters"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "picomatch",
+            "severity": "high",
+            "via": [
+              "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+              "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+              "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+              "Picomatch has a ReDoS vulnerability via extglob quantifiers"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/schematics",
+              "version": "11.1.0",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "qs",
+            "severity": "moderate",
+            "via": [
+              "qs's arrayLimit bypass in comma parsing allows denial of service",
+              "qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion"
+            ],
+            "fixAvailable": {
+              "name": "@nestjs/platform-express",
+              "version": "11.1.21",
+              "isSemVerMajor": true
+            }
+          },
+          {
+            "name": "serialize-javascript",
+            "severity": "high",
+            "via": [
+              "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+              "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "terser-webpack-plugin",
+            "severity": "high",
+            "via": [
+              "serialize-javascript"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "tmp",
+            "severity": "low",
+            "via": [
+              "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter"
+            ],
+            "fixAvailable": true
+          },
+          {
+            "name": "webpack",
+            "severity": "low",
+            "via": [
+              "webpack buildHttp: allowedUris allow-list bypass via URL userinfo (@) leading to build-time SSRF behavior",
+              "webpack buildHttp HttpUriPlugin allowedUris bypass via HTTP redirects → SSRF + cache persistence"
+            ],
+            "fixAvailable": true
+          }
+        ]
+      }
+    ]
+  }
+}
